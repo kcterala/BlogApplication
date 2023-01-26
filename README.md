@@ -1,3 +1,3 @@
 # BlogApplication
 
-### Sample Blog Application API
+### Sample Blog Application API ------------

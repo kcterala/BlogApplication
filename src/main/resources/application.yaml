@@ -1,8 +1,10 @@
 spring:
+  config:
+    import: file:env.properties
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:3306/blogdb
-    username: root
-    password: MyNewPass
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/${DB_DATABASE}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
